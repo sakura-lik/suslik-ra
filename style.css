@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease all;
+}
+header{
+    background-color: #000;
+
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+nav a{
+    border: 1px solid #ed254d;
+    color: #ed254d;
+    margin: 1%;
+    text-decoration: none;
+    width: 8%;
+    font-size: 110%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+}
+nav a:hover{
+    background-color: #ed254d;
+    border: 1px solid #FFB997;
+    color: #FFB997;
+}
+.logo{
+    margin: 0.5%;
+    height: 50px;
+    width: 35px;
+    /*margin-right: 65%;*/
+    margin-right: 75%;
+}
+/*.welkom{
+    background-image: url(../img/1629524587_v9fvgkzg0rfz1572368297060.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+}
+
+.container1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
+    width: 80%;
+    height: 40%;
+}*/
+.container{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
+    width: 80%;
+    height: 40%;
+}
+/*.infa{
+    font-size:110%;
+    padding: 1%;
+    text-align: center;
+    background-color: #ed254d8c;
+    color: #FFB997;
+    border-radius: 5px;
+    width: 45%;
+    height: 50%;
+}*/
+.karusel{
+    background-color: #FFB997;
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+  }
+  .cards {
+    display: flex;
+    overflow-x: scroll;
+    width:900px;
+  }
+  .cards::-webkit-scrollbar{
+    display: none;
+    }
+ 
+    /*.cards img{
+        width: 300px;
+        height: 300px;
+    }*/
+    .card{
+        height: 375px;
+        width:215px;
+        background-color: #ed254d;
+        border-radius: 11px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .portret{
+        border: 1px solid #000;
+        border-radius: 6px;
+    }
+    .card h1, .card li{
+        color: #FFB997;
+    }
+    .card ul{
+        list-style-type: none;
+    }
+    .gallery{
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+    .btn{
+        background-color: #ed254d;
+        color: #FFB997;
+        border: 1px solid #FFB997;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 150%;
+        margin: 0.5%;
+    }
+    .btn:hover{
+        background-color: #000;
+        color: #ed254d;
+        border: 1px solid #ed254d;
+    }
+    .world img{
+        width: 30%;
+        height: 30%;
+        background-color: #94B0DA;
+        margin: 50px;
+        border: 1px solid #000;
+        border-radius: 50%;
+    }
+    .world{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        background-color: #ed254d;
+    }
+    .world li{
+        margin: 50px;
+        list-style-type: none;
+        color: #FFB997;
+        font-size: 110%;
+    }
+    footer{
+        background-color: #000;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+    }
+    footer p{
+        color: #ed254d;
+    }   
+    footer p:hover{
+        color: #FFB997;
+    }
+    @media(max-width:1325px){
+        .welkom{
+            height: 500px;
+        } 
+        .infa{
+            height: 125px;
+        }
+    }
+   
+    @media(max-width:961px){
+        .welkom{
+            height: 300px;
+        }
+        .infa{
+            height: 150px;
+        }
+    }
+    @media (max-width:681px){
+        .infa{
+            height: 175px;
+        }
+    }
+    @media(max-width:1155px){
+    .infa{
+        font-size:100%;
+    }
+    .gallery{
+        width: 80%;
+    }
+}
+@media (max-width:854px) {
+    .gallery{
+        width: 80%;
+    }
+}
+@media (max-width:1034px){
+    .gallery{
+        width: 80%;
+    }
+}
+@media (max-width:450px){
+    .logo{
+        margin: 0.5%;
+        height: 50px;
+        width: 35px;
+        margin-right: 35%;
+    }
+    nav a{
+        margin: 4px;
+        margin-top: 8px;
+        width: 30%;
+        height: 35px;
+        font-size: 110%;
+        padding: 5px;
+    }
+    section{
+        max-width: 100%;
+    }
+    .world img{
+        margin: 0;
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-bottom: 10%;
+    }
+    .container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cards{
+        justify-content: center;
+    }
+    footer{
+        height: 80px;
+    }
+
+    html{
+        background-color: #000;
+    }
+}
